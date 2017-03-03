@@ -5,13 +5,13 @@
 #-------------------------------------------------------
 
 # This is the name given to your device or mobile app in the Amazon developer portal. To look this up, navigate to https://developer.amazon.com/edw/home.html. It may be labeled Device Type ID.
-ProductID=YOUR_PRODUCT_ID_HERE
+ProductID=raspberry_pi_3
 
 # Retrieve your client ID from the web settings tab within the developer console: https://developer.amazon.com/edw/home.html
-ClientID=YOUR_CLIENT_ID_HERE
+ClientID=amzn1.application-oa2-client.f48b14b2a6324ba484e4c9f6f3706f06
 
 # Retrieve your client secret from the web settings tab within the developer console: https://developer.amazon.com/edw/home.html
-ClientSecret=YOUR_CLIENT_SECRET_HERE
+ClientSecret=a7fc30f19d100c00845b1359f99339976253030a0f6c37b1a8634e1b6c21eb20
 
 #-------------------------------------------------------
 # No need to change anything below this...

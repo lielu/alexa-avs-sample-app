@@ -424,7 +424,14 @@ public class AVSController implements RecordingStateListener, AlertHandler, Aler
     private void handleAudioPlayerDirective(Directive directive) throws DirectiveHandlingException {
         String directiveName = directive.getName();
         if (AVSAPIConstants.AudioPlayer.Directives.Play.NAME.equals(directiveName)) {
-            player.handlePlay((Play) directive.getPayload());
+            Play play = (Play) directive.getPayload();
+
+            if (play.getAudioItem().getStream().getUrl().endsWith("/40.wav")) {
+                // Getting turn on for Heelight. Turn on the night light.
+                // TODO: Make it more specific
+                log.info("handleAudioPlayerDirective: Getting 40.wav");
+            }
+            player.handlePlay(play);
         } else if (AVSAPIConstants.AudioPlayer.Directives.Stop.NAME.equals(directiveName)) {
             player.handleStop();
         } else if (AVSAPIConstants.AudioPlayer.Directives.ClearQueue.NAME.equals(directiveName)) {
