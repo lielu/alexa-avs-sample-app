@@ -1,4 +1,10 @@
-![](../../wiki/assets/alexa-logo-3.png)
+# Branch wake_hardware_pi
+Auto wake word client on Raspberry Pi.
+
+## About the project
+This project starts from a fork from the Alexa Voice Service Raspberry Pi sample code. It aims at creating a solution on Raspberry Pi to interact with Wake Word Engines (supported by AVS sample) and respond to the wake word in Java client.
+
+Initial objective is to create a hardware prototype to control turning on/off lights.
 
 ## About the project
 
